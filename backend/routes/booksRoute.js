@@ -41,7 +41,6 @@ router.post('/', async (request, response) => {
       });
     }
     const newBook = {
-      request.body.eindat ,
            eindat: request.body.eindat,
            entdat: request.body.entdat ,
            verdat: request.body.verdat ,
@@ -61,15 +60,15 @@ router.post('/', async (request, response) => {
            them1: request.body.them1,
            hauper: request.body.hauper,
            hauper0: request.body.hauper0,
-           request.body.zeit,
-           request.body.amalin,
-           request.body.pos,
-           request.body.mark,
-           request.body.markrang,
-           request.body.topw,
-           request.body.belber,
-           request.body.gesw,
-           request.body.zust,
+           zeit: request.body.zeit,
+           amalin: request.body.amalin,
+           pos: request.body.pos,
+           mark: request.body.mark,
+           mark: request.body.markrang,
+           topw: request.body.topw,
+           belber: request.body.belber,
+           gesw: request.body.gesw,
+           zust: request.body.zust,
     };
 
     const book = await Book.create(newBook);

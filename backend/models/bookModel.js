@@ -10,17 +10,17 @@ const bookSchema = mongoose.Schema(
 //Lesehistorie Entdeckung
     entdat: {
       type: Date,
-      required: true,
+      required: false,
     },
 //Lesehistorie Veröffentlichung
     verdat: {
       type: Date,
-      required: true,
+      required: false,
     },
 //Lesehistorie Beendigung
     enddat: {
       type: Date,
-      required: true,
+      required: false,
     },
     // Mindestangaben
     autor: {
