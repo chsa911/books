@@ -70,24 +70,24 @@ const bookSchema = mongoose.Schema(
                         type: String,
                         required: false,
                       },
-         them0: {
+         them: {
                          type: String,
                          required: false,
 
                               },
-         them1: {
+         them0: {
                          type: String,
                          required: false,
                                        },
-        them2: {
+        them1: {
                                                type: String,
                                                required: false,
                                              },
-         hauper0: {
+         hauper: {
                             type: String,
                             required: false,
                                           },
-           hauper1: {
+           hauper0: {
                                                   type: String,
                                                   required: false,
                                                 },

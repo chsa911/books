@@ -12,7 +12,7 @@ router.post('/', async (request, response) => {
       !request.body.verdat ||
       !request.body.enddat ||
       !request.body.autor ||
-      !request.body.keyword||
+      !request.body.keyw||
       !request.body.kwp||
       !request.body.verl||
       !request.body.seit||
@@ -21,11 +21,11 @@ router.post('/', async (request, response) => {
       !request.body.gengen||
       !request.body.kont||
       !request.body.land||
+      !request.body.them||
       !request.body.them0||
       !request.body.them1||
-      !request.body.them2||
+      !request.body.hauper||
       !request.body.hauper0||
-      !request.body.hauper1||
       !request.body.zeit||
       !request.body.amalin||
       !request.body.pos||
@@ -37,13 +37,39 @@ router.post('/', async (request, response) => {
       !request.body.zust
           ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, autor, keyword, kwp, verlag, seiten',
+        message: 'Send all required fields: eingabedatum, autor, keyword, keywordposition, verlag, seiten',
       });
     }
     const newBook = {
-      eindat: request.body.eindat,
-      autor: request.body.autor,
-      keyword: request.body.keyword,
+      request.body.eindat ,
+           eindat: request.body.eindat,
+           entdat: request.body.entdat ,
+           verdat: request.body.verdat ,
+           enddat: request.body.enddat ,
+           autor: request.body.autor ,
+           keyw: request.body.keyw,
+           kwp: request.body.kwp,
+           verl: request.body.verl,
+           seit: request.body.seit,
+           lesevs: request.body.lesevs,
+           genre: request.body.genre,
+           gengen: request.body.gengen,
+           kont: request.body.kont,
+           land: request.body.land,
+           them: request.body.them,
+           them0: request.body.them0,
+           them1: request.body.them1,
+           hauper: request.body.hauper,
+           hauper0: request.body.hauper0,
+           request.body.zeit,
+           request.body.amalin,
+           request.body.pos,
+           request.body.mark,
+           request.body.markrang,
+           request.body.topw,
+           request.body.belber,
+           request.body.gesw,
+           request.body.zust,
     };
 
     const book = await Book.create(newBook);
@@ -90,10 +116,10 @@ router.put('/:id', async (request, response) => {
     if (
       !request.body.eindat ||
       !request.body.autor ||
-      !request.body.keyword
+      !request.body.keyw
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, autor, keyword, kwp, verlag, seiten',
+        message: 'Send all required fields: eingabedatum, autor, keyword, keywordposition, verlag, seiten',
       });
     }
 

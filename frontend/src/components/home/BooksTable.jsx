@@ -32,7 +32,7 @@ const BooksTable = ({ books }) => {
               {book.autor}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.keyword}
+              {book.keyw}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
