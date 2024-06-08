@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 
 const CreateBooks = () => {
   const [eindat, setEindat] = useState('');
-  const [author, setAuthor] = useState('');
+  const [autor, setAutor] = useState('');
   const [keyword, setkeyword] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const CreateBooks = () => {
   const handleSaveBook = () => {
     const data = {
       eindat,
-      author,
+      autor,
       keyword,
     };
     setLoading(true);
@@ -51,11 +51,11 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Author</label>
+          <label className='text-xl mr-4 text-gray-500'>autor</label>
           <input
             type='text'
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
+            value={autor}
+            onChange={(e) => setAutor(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

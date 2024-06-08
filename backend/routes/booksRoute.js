@@ -8,16 +8,16 @@ router.post('/', async (request, response) => {
   try {
     if (
       !request.body.eindat ||
-      !request.body.author ||
+      !request.body.autor ||
       !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, author, keyword',
+        message: 'Send all required fields: eindat, autor, keyword',
       });
     }
     const newBook = {
       eindat: request.body.eindat,
-      author: request.body.author,
+      autor: request.body.autor,
       keyword: request.body.keyword,
     };
 
@@ -64,11 +64,11 @@ router.put('/:id', async (request, response) => {
   try {
     if (
       !request.body.eindat ||
-      !request.body.author ||
+      !request.body.autor ||
       !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, author, keyword',
+        message: 'Send all required fields: eindat, autor, keyword',
       });
     }
 

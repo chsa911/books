@@ -11,7 +11,7 @@ const BooksTable = ({ books }) => {
           <th className='border border-slate-600 rounded-md'>No</th>
           <th className='border border-slate-600 rounded-md'>eindat</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Author
+            autor
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             Publish Year
@@ -29,7 +29,7 @@ const BooksTable = ({ books }) => {
               {book.eindat}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.author}
+              {book.autor}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.keyword}
