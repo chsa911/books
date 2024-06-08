@@ -27,9 +27,10 @@ app.get('/', (request, response) => {
 });
 
 app.use('/books', booksRoute);
+//np
 
 mongoose
-  .connect(mongodb://localhost:27017/Database)
+  .connect(mongoDBURL)
   .then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {
