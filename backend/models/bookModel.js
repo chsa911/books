@@ -2,10 +2,30 @@ import mongoose from 'mongoose';
 
 const bookSchema = mongoose.Schema(
   {
+//Lesehistorie Eingabedatum
     eindat: {
       type: Date,
       required: true,
     },
+//Lesehistorie Entdeckung
+
+    entdat: {
+      type: Date,
+      required: true,
+    },
+//Lesehistorie Veröffentlichung
+
+    verdat: {
+      type: Date,
+      required: true,
+    },
+//Lesehistorie Beendigung
+
+    enddat: {
+      type: Date,
+      required: true,
+    },
+    // Mindestangaben
     autor: {
       type: String,
       required: true,
@@ -14,61 +34,17 @@ const bookSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
-  },
-  {
-    timestamps: true,
-  }
-);
-/*
-{
-     eindat: {
-           type: Date,
-           required: true,
-         },
-     autor: {
-      type: String,
-      required: false,
-    },
-    keyword: {
-      type: String,
-      required: true,
-    },
-    kwp: {
-      type: Number,
-      required: true,
-    },
-
-      verlag: {
-        type: String,
-        required: true,
-      },
-
-      seiten: {
+  kwp: {
         type: Number,
         required: true,
       },
-
-//Teil: Lesehistorie
-
-    //Entdeckungsdatum
-
-      entdat: {
-              type: Date,
-              required: false,
-             },
-
-    //Datum der Veröffentlichung auf der Homepage
-
-      verdat: {
-        type: Date,
-        required: false,
-      },
-
-   // Datum zu dem das Buch beendet wurde
-
-      enddat: {
-        type: Date,
-        required: false,
+   verlag: {
+          type: String,
+          required: true,
+        },
+      seiten: {
+        type: Number,
+        required: true,
       },
 // Wie oft wurde das Buch gelesen 0= erstes mal 1= 2. mal
 
@@ -84,8 +60,7 @@ const bookSchema = mongoose.Schema(
                 type: String,
                 required: false,
                              },
-
-       gengenau: {
+      gengenau: {
                   type: String,
                   required: false,
                                },
@@ -96,7 +71,6 @@ const bookSchema = mongoose.Schema(
                     required: false,
 
                   },
-
          land: {
                         type: String,
                         required: false,
@@ -173,6 +147,17 @@ const bookSchema = mongoose.Schema(
 
                                                  },
 },
+
+
+  {
+    timestamps: true,
+  }
+);
+/*
+{
+
+
+
 {
   timestamps: true,
 }
