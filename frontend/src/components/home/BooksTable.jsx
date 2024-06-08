@@ -25,8 +25,18 @@ const BooksTable = ({ books }) => {
             <td className='border border-slate-700 rounded-md text-center'>
               {index + 1}
             </td>
+            //comx
             <td className='border border-slate-700 rounded-md text-center'>
               {book.eindat}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center'>
+              {book.entdat}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center'>
+              {book.verdat}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center'>
+              {book.enddat}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.autor}
@@ -34,6 +44,73 @@ const BooksTable = ({ books }) => {
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.keyw}
             </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.kwp}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.verl}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.seit}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.lesevs}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.genre}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.gengen}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.kont}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.land}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.them}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.them0}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.them1}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.hauper}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.hauper0}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.zeit}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.amalin}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.pos}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.mark}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.markrang}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.topw}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.belber}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.gesw}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.zust}
+            </td>
+
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
                 <Link to={`/books/details/${book._id}`}>
