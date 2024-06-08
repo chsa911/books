@@ -36,8 +36,8 @@ const ShowBook = () => {
             <span>{book._id}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Title</span>
-            <span>{book.title}</span>
+            <span className='text-xl mr-4 text-gray-500'>eindat</span>
+            <span>{book.eindat}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Author</span>
@@ -45,7 +45,7 @@ const ShowBook = () => {
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
-            <span>{book.publishYear}</span>
+            <span>{book.keyword}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Create Time</span>

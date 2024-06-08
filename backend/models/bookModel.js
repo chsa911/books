@@ -2,15 +2,15 @@ import mongoose from 'mongoose';
 
 const bookSchema = mongoose.Schema(
   {
-    title: {
-      type: String,
+    eindat: {
+      type: Date,
       required: true,
     },
     author: {
       type: String,
       required: true,
     },
-    publishYear: {
+    keyword: {
       type: Number,
       required: true,
     },

@@ -7,18 +7,18 @@ const router = express.Router();
 router.post('/', async (request, response) => {
   try {
     if (
-      !request.body.title ||
+      !request.body.eindat ||
       !request.body.author ||
-      !request.body.publishYear
+      !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, author, publishYear',
+        message: 'Send all required fields: eindat, author, keyword',
       });
     }
     const newBook = {
-      title: request.body.title,
+      eindat: request.body.eindat,
       author: request.body.author,
-      publishYear: request.body.publishYear,
+      keyword: request.body.keyword,
     };
 
     const book = await Book.create(newBook);
@@ -63,12 +63,12 @@ router.get('/:id', async (request, response) => {
 router.put('/:id', async (request, response) => {
   try {
     if (
-      !request.body.title ||
+      !request.body.eindat ||
       !request.body.author ||
-      !request.body.publishYear
+      !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, author, publishYear',
+        message: 'Send all required fields: eindat, author, keyword',
       });
     }
 
