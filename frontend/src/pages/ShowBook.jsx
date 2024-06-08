@@ -38,6 +38,16 @@ const ShowBook = () => {
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>eindat</span>
             <span>{book.eindat}</span>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>entdat</span>
+            <span>{book.entdat}</span>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>verdat</span>
+            <span>{book.verdat}</span>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>enddat</span>
+            <span>{book.enddat}</span>
+
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>autor</span>

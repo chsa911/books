@@ -12,7 +12,7 @@ router.post('/', async (request, response) => {
       !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, autor, keyword',
+        message: 'Send all required fields: eindat, autor, keyword, kwp, verlag, seiten',
       });
     }
     const newBook = {
@@ -68,7 +68,7 @@ router.put('/:id', async (request, response) => {
       !request.body.keyword
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: eindat, autor, keyword',
+        message: 'Send all required fields: eindat, autor, keyword, kwp, verlag, seiten',
       });
     }
 
