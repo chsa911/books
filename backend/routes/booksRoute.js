@@ -3,14 +3,39 @@ import { Book } from '../models/bookModel.js';
 
 const router = express.Router();
 
-// Route for Save a new Book
+// Route for Save a new Book comx
 router.post('/', async (request, response) => {
   try {
     if (
       !request.body.eindat ||
+      !request.body.entdat ||
+      !request.body.verdat ||
+      !request.body.enddat ||
       !request.body.autor ||
-      !request.body.keyword
-    ) {
+      !request.body.keyword||
+      !request.body.kwp||
+      !request.body.verl||
+      !request.body.seit||
+      !request.body.lesevs||
+      !request.body.genre||
+      !request.body.gengen||
+      !request.body.kont||
+      !request.body.land||
+      !request.body.them0||
+      !request.body.them1||
+      !request.body.them2||
+      !request.body.hauper0||
+      !request.body.hauper1||
+      !request.body.zeit||
+      !request.body.amalin||
+      !request.body.pos||
+      !request.body.mark||
+      !request.body.markrang||
+      !request.body.topw||
+      !request.body.belber||
+      !request.body.gesw||
+      !request.body.zust
+          ) {
       return response.status(400).send({
         message: 'Send all required fields: eindat, autor, keyword, kwp, verlag, seiten',
       });

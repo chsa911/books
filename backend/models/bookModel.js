@@ -8,19 +8,16 @@ const bookSchema = mongoose.Schema(
       required: true,
     },
 //Lesehistorie Entdeckung
-
     entdat: {
       type: Date,
       required: true,
     },
 //Lesehistorie Veröffentlichung
-
     verdat: {
       type: Date,
       required: true,
     },
 //Lesehistorie Beendigung
-
     enddat: {
       type: Date,
       required: true,
@@ -30,7 +27,7 @@ const bookSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    keyword: {
+    keyw: {
       type: Number,
       required: true,
     },
@@ -38,35 +35,33 @@ const bookSchema = mongoose.Schema(
         type: Number,
         required: true,
       },
-   verlag: {
+   verl: {
           type: String,
           required: true,
         },
-      seiten: {
+      seit: {
         type: Number,
         required: true,
       },
 // Wie oft wurde das Buch gelesen 0= erstes mal 1= 2. mal
-
-      leseversuche: {
+     lesevs: {
         type: Number,
         required: false,
       },
     //Teil: Content
-
-       //Genre
+    //Genre
 //F= Fiktion, N=Nonfiktion
       genre: {
                 type: String,
                 required: false,
                              },
-      gengenau: {
+      gengen: {
                   type: String,
                   required: false,
                                },
     //Handlungsort:
     // 0-9
-       kontinent: {
+       kont: {
                     type: Number,
                     required: false,
 
@@ -75,24 +70,24 @@ const bookSchema = mongoose.Schema(
                         type: String,
                         required: false,
                       },
-         thema0: {
+         them0: {
                          type: String,
                          required: false,
 
                               },
-         thema1: {
+         them1: {
                          type: String,
                          required: false,
                                        },
-        thema2: {
+        them2: {
                                                type: String,
                                                required: false,
                                              },
-         hauptperson0: {
+         hauper0: {
                             type: String,
                             required: false,
                                           },
-           hauptperson1: {
+           hauper1: {
                                                   type: String,
                                                   required: false,
                                                 },
@@ -107,22 +102,24 @@ const bookSchema = mongoose.Schema(
                                                required: false,
     },
   // Position der Markierung: oben, unten, rechts, links
-    position: {
+    pos: {
                                                type: String,
                                                required: false,
                                                                                             },
     //Teil Markierungen
+    // Markierung inkl Farbwert
     mark: {
                                                    type: String,
                                                    required: false,
 
                                                  },
+    // Rang der Markierung
     markrang: {
                                                    type: String,
                                                    required: false,
 
     },
-                                                   //Topwert                                              },
+    //Topwert in jedem Bereich
    topw: {
                                                    type: Number,
                                                    required: false,
@@ -134,21 +131,19 @@ const bookSchema = mongoose.Schema(
                                                    required: false,
 
                                                  },
-    //Gesamtwert
+    //Gesamtwert aller Bereiche
     gesw: {
                                                    type: Number,
                                                    required: false,
 
                                                  },
-    //Markierung: x= verfügbar, v=vorzeitig beendet, w= wunsch
-    zustand: {
+    //Zustand Markierung: x= verfügbar, v=vorzeitig beendet, w= wunsch
+    zust: {
                                                    type: String,
                                                    required: false,
 
                                                  },
 },
-
-
   {
     timestamps: true,
   }
